@@ -7,6 +7,7 @@ import Scooter from "../../components/Scooter/Scooter";
 import MapGeolocation from "../../components/Map/MapGeolocation";
 import { useEffect, useState } from "react";
 import { backendUrl } from "../../globals.js";
+import SearchBox from "../../components/Map/SearchBox";
 
 function Map() {
     const [scooterList, setScooterList] = useState([]);
@@ -37,6 +38,7 @@ function Map() {
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <ZoomControl position="bottomright" />
+                <SearchBox />
                 <MapGeolocation />
 
                 {scooterList.map((info, key) => {
