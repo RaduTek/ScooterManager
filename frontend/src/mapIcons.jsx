@@ -39,6 +39,7 @@ const iconUserLocation = new MapIcon({
     iconRetinaUrl: userLocation,
     iconAnchor: [20, 40],
     iconSize: [40, 40],
+    popupAnchor: [0, -40],
 });
 
 export {
