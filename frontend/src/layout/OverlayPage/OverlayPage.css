@@ -1,0 +1,61 @@
+.overlay-page {
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    overflow-y: auto;
+    background-color: white;
+    display: flex;
+    min-width: 250px;
+    min-height: 100px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.overlay-page h1 {
+    margin: 0;
+    font-size: 20pt;
+    font-weight: 600;
+    color: #555;
+}
+
+.overlay-page .overlay-page-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    transition: background-color 0.2s;
+}
+.overlay-page .overlay-page-close:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.overlay-page .overlay-page-close svg {
+    width: 18px;
+    height: 18px;
+    color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .overlay-page {
+        border-radius: 10px 10px 0 0;
+        top: initial;
+        right: 0;
+        left: 0;
+        bottom: 60px;
+    }
+}
