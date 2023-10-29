@@ -1,7 +1,6 @@
 import Icon from "@mdi/react";
 import {
     mdiAccountCircleOutline,
-    mdiMagnify,
     mdiMap,
     mdiMapMarkerRadiusOutline,
 } from "@mdi/js";
@@ -16,11 +15,6 @@ function Navbar() {
             label: "Explore",
             icon: mdiMap,
             target: "/map",
-        },
-        {
-            label: "Search",
-            icon: mdiMagnify,
-            target: "/map/search",
         },
         {
             label: "Near Me",
