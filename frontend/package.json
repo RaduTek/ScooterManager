@@ -2,9 +2,7 @@
   "name": "scootermanager",
   "version": "0.1.0",
   "private": true,
-  "options": {
-    "proxy": "http://localhost:3001"
-  },
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@mdi/js": "^7.3.67",
     "@mdi/react": "^1.6.1",
